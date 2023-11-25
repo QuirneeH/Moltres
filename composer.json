@@ -1,0 +1,17 @@
+{
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+        },
+
+        "files":[
+            "app/core/Config.php"
+        ]
+    },
+
+    "require":{
+        "phpmailer/phpmailer": "6.0.*",
+        "coffeecode/router": "2.0.*"
+    }
+    
+}
