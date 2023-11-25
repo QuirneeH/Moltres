@@ -1,5 +1,5 @@
 <?php
 //URL do Servidor
-define("URL", "http://localhost/Moltres");
+define("URL_SERVER", "http://localhost/Moltres");
 
 //
