@@ -1,15 +1,17 @@
 <?php
 //Nome da Class
 namespace APP\Core;
-//uso
+//usos
 use mysqli;
 
 abstract class Connection 
 {
+    //Atributos
     static $link;
 
+    //Métodos
     public static function connect()
-    {                           //Ambiente, Usuario, Senha, Nome do Banco
+    {   //                       Ambiente, Usuario, Senha, Nome do Banco
         self::$link = new mysqli("localhost", "root", "", "");
         return self::$link;
     }

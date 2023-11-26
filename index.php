@@ -1,3 +1,6 @@
 <?php
+//Definição de Região (Data e Hora Locais)
 date_default_timezone_set('America/Bahia');
-require('vendor/autoload.php');
+
+//Rotas Incluidas na Pagina
+include("routes/route.php");
