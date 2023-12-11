@@ -1,0 +1,27 @@
+@charset "UTF-8";
+:root{
+    --texto-1 : #000000;
+    --texto-2 : #ffffff;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background: url(https://c.tenor.com/nh_nNGv9TTQAAAAC/moltres-pokemon.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2{
+    color: red;
+    text-shadow: 1.7px 1.7px 10px black;
+    text-align: center;
+    font-family: calibri;
+    font-size: 10rem;
+}
+
+h2{
+    font-size: 5rem;
+}

@@ -2,26 +2,24 @@
 require('vendor/autoload.php');
 
 use CoffeeCode\Router\Router;
-//URL Inicial "/"
+
+//URL Inicial
 $route = new Router(URL_SERVER);
 
-//URL Raiz
-$route->group(null)->namespace("App\Class\Controller");
-$route->get("/", "UserController:home");
-$route->get("/mais", "AuthController:home");
+//Rota na Raiz
+$route->group(null)->namespace("App\Web");
+$route->get("/", "Web:welcome");
 
-//URL de Erros
-$route->group("ih");
-$route->get("/{number}", function($info){
-    echo $info['number'];
-});
+//Rota de Erros
+$route->group("ih")->namespace("App\Web");
+$route->get("/{number}", "Web:error");
 
-//Execulta as URLs e suas funções
+//Execulta as Rotas e suas funções
 $route->dispatch();
 
-//Verifica erros de URL
+//Verifica erros de Rotas
 if($route->error())
 {
-    //Redirecionamento de URL nos Erros
+    //Redirecionamento de Rota nos Erros
     $route->redirect("/ih/{$route->error()}");
 }
