@@ -1,7 +1,10 @@
 @charset "UTF-8";
 :root{
+/* Variaveis de cores */
+    /* Textos */
     --texto-1 : #000000;
     --texto-2 : #ffffff;
+    --texto-3 : #ff0000;
 }
 
 *{
@@ -15,10 +18,13 @@ body{
 }
 
 h1, h2{
-    color: red;
+    color: var(--texto-3);
     text-shadow: 1.7px 1.7px 10px black;
     text-align: center;
     font-family: calibri;
+}
+
+h1{
     font-size: 10rem;
 }
 

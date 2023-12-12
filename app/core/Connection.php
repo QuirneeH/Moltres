@@ -10,8 +10,11 @@ abstract class Connection
     static $link;
 
     //Métodos
+    /**
+     * Conexão com o Banco de Dados
+     */
     public static function connect()
-    {   //                       Ambiente, Usuario, Senha, Nome do Banco
+    {   //                        Ambiente, Usuario, Senha, Nome do Banco
         self::$link = new mysqli("localhost", "root", "", "");
         return self::$link;
     }
