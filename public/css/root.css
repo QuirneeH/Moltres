@@ -17,7 +17,7 @@ body{
     background-size: cover;
 }
 
-h1, h2{
+h1, h2, h3{
     color: var(--texto-3);
     text-shadow: 1.7px 1.7px 10px black;
     text-align: center;

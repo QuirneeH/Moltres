@@ -7,15 +7,16 @@ use mysqli;
 abstract class Connection 
 {
     //Atributos
-    static $link;
+    static $connect;
 
     //Métodos
     /**
-     * Conexão com o Banco de Dados
+     * Efetua uma conexão com o banco de dados
+     * @return $connect
      */
-    public static function connect()
-    {   //                        Ambiente, Usuario, Senha, Nome do Banco
-        self::$link = new mysqli("localhost", "root", "", "");
-        return self::$link;
+    public static function connect(): mysqli
+    {                           //Servidor, Usuário, Senha, Nome do Banco
+        self::$connect = new mysqli("localhost", "root", "", "");
+        return self::$connect;
     }
 }

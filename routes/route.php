@@ -1,25 +1,25 @@
 <?php
-require('vendor/autoload.php');
+require_once('vendor/autoload.php');
 
 use CoffeeCode\Router\Router;
 
 //URL Base
-$route = new Router(URL_SERVER);
+$router = new Router(URL_SERVER);
 
 //Rota na Raiz
-$route->group(null)->namespace("App\Web");
-$route->get("/", "Web:welcome");
+$router->group(null)->namespace("App\Web");
+$router->get("/", "Welcome:welcome");
 
 //Rota de Erros
-$route->group("vish")->namespace("App\Web");
-$route->get("/{number}", "Web:error");
+$router->group("vish")->namespace("App\Web");
+$router->get("/{code}", "Error:error");
 
 //Execulta as Rotas e suas funções
-$route->dispatch();
+$router->dispatch();
 
 //Verifica erros de Rotas
-if($route->error())
+if($router->error())
 {
     //Redirecionamento de Rota nos Erros
-    $route->redirect("/vish/{$route->error()}");
+    $router->redirect("/vish/{$router->error()}");
 }
