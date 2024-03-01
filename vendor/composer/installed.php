@@ -1,24 +1,15 @@
 <?php return array(
     'root' => array(
-        'name' => '__root__',
+        'name' => 'quirneeh/checklist',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c52715e0f3bf21ae11fee8a6f986f7a88bd9eb1b',
+        'reference' => 'b4e4b0cf194c9c2c2f30dac31cc31f6e4e57e87c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        '__root__' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'c52715e0f3bf21ae11fee8a6f986f7a88bd9eb1b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'coffeecode/router' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -34,6 +25,15 @@
             'reference' => '0c41a36d4508d470e376498c1c0c527aa36a2d59',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'quirneeh/checklist' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'b4e4b0cf194c9c2c2f30dac31cc31f6e4e57e87c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
