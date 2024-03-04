@@ -20,6 +20,6 @@ $router->dispatch();
 //Verifica erros de Rotas
 if($router->error())
 {
-    //Redirecionamento de Rota nos Erros
+    //Redirecionamento para Rota nos Erros
     $router->redirect("/vish/{$router->error()}");
 }
