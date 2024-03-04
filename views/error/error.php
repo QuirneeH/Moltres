@@ -13,12 +13,17 @@
             echo "<h1>ERRO $data[code]</h1>" . 
                  "<h2>Página não encontrada.</h2>";
         } elseif ($data['code'] == 405) {
-            # code...
-        } elseif ($data['code'] == 504) {
-            # code...
-        } elseif ($data['code'] == 505) {
-            # code...
+            echo "<h1>ERRO $data[code]</h1>" . 
+                 "<h2>Método não permitido.</h2>";
+        } elseif ($data['code'] == 400) {
+            echo "<h1>ERRO $data[code]</h1>" . 
+                 "<h2>Solicitação mau implementada.</h2>";
+        } elseif ($data['code'] == 501) {
+            echo "<h1>ERRO $data[code]</h1>" . 
+                 "<h2>Solicitação não implementada.</h2>";
         }
     ?>
+
+    <a href="/Moltres"><button>Inicio</button></a>
 </body>
 </html>

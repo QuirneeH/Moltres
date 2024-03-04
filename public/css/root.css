@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root{
 /* Variaveis de cores */
-    /* Textos */
+    /* Cores do Textos */
     --texto-1 : #000000;
     --texto-2 : #ffffff;
     --texto-3 : #ff0000;
@@ -10,13 +10,14 @@
 *{
     margin: 0;
 }
-
+/* Corpo */
 body{
     background: url(https://c.tenor.com/nh_nNGv9TTQAAAAC/moltres-pokemon.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Formatações de Texto */
 h1, h2, h3{
     color: var(--texto-3);
     text-shadow: 1.7px 1.7px 10px black;
@@ -30,4 +31,12 @@ h1{
 
 h2{
     font-size: 5rem;
+}
+
+/* Padrões */
+button{
+    height: 25px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: #ff0000;
 }
